@@ -1,27 +1,29 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-img {
+  width: 100%; /* Ajusta el tamaño de la imagen al 100% del ancho del modal */
+  height: auto; /* Altura automática para mantener la proporción de la imagen */
+  display: block; /* Asegura que la imagen se muestre como bloque */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  max-width: 100%; /* Evita que la imagen se desborde del modal */
+}
+.selected {
+  border: 3px solid #ff0000; /* Cambiar el color del borde para indicar selección */
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+/* Estilos para los botones en la parte inferior */
+ion-fab {
+  margin-top: 20px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-fab-button {
+  margin-right: 10px;
 }
 
-#container a {
-  text-decoration: none;
+/* Estilo específico para el ícono del modo selección */
+ion-icon[name="checkbox-outline"] {
+  color: #0000ff; /* Cambiar el color del ícono */
+}
+
+/* Estilo para el ícono del botón de eliminación */
+ion-icon[name="trash-outline"] {
+  color: #ff0000; /* Cambiar el color del ícono */
 }

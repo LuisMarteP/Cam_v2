@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'photo-modal',
+    loadChildren: () => import('./photo-modal/photo-modal.module').then( m => m.PhotoModalPageModule)
+  },
 ];
 
 @NgModule({
